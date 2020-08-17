@@ -1,0 +1,53 @@
+date
+cal
+wget http://site-address   #web get
+gedit filename             #gnome get
+unzip filename 
+mkdir filename            #make directory
+vim filename
+mkdir -p d1/d2/d3
+cd ../../../
+cd d1/d2/d3
+cd -                     # to back from where you come
+ls -R d1                 #-R is a switch, R mean Recursively
+pwd                      #present working directory
+touch filename
+cat                      # take file content and concatate on console
+wc                       # word count // how many word in file
+whatis wc                # whatis tell output command details
+man wc                   # munaul for all the commands on terminal
+ls directory/*.csv       # list all files of specific format
+
+______________________history & Fast Tracking__________________
+
+up arrow key            #to check previous commands
+history
+!540                    # run commands of the history by Pank command
+ctrl+R                  # To search the command from history
+
+______________________Pipe & chaining commands_________________
+
+head filename                      #show first 10 lines of file
+cat filename | 2nd command         #cat iris.csv | wc    //output of first input of 2nd
+grep "setosa" iris.csv             #find the line having setosa  //work on regex
+cat iris.csv | grep "setosa" | wc               #3-level composition
+cat iris.csv | grep "setosa" |grep "3.5" | wc   #4-level composition
+
+
+______________________Redirecting Output to files______________
+
+echo "write anything on console"     
+echo "something" > filename              #redirect output to the file
+cat iris.csv | grep "setosa" > setosa_1.csv  #redirect the output to file
+
+
+______________________Remove , move and other stuff_____________
+
+mv setosat.csv setosa.csv                    #remain the file
+cp iris.csv iris-backup.csv                  #this will create copy of file
+mv iris-backup.csv backup/iris.csv           #remaining of file while mv
+cp -r folder folder-backup                   #-r because folder have multiple files
+
+
+First three chapter is completed --> now go to the machine learning tutorials
+___________________________yeppppppppyyyyyyyyyyyyyyyyyyyyy_______________
