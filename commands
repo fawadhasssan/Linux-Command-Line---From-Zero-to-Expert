@@ -50,4 +50,7 @@ cp -r folder folder-backup                   #-r because folder have multiple fi
 
 
 First three chapter is completed --> now go to the machine learning tutorials
-___________________________yeppppppppyyyyyyyyyyyyyyyyyyyyy_______________
+___________________________Finding a File_____________
+find  ./  altschool.pdf
+
+find  ./  -name *.pdf    (FINDING ANYTHING RELATED TO .PDF)
